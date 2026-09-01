@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0b12">
+  <meta name="description" content="Filmes, séries, streaming, trailers e tudo o que está em alta.">
+  <title>CINEMAGAZINE — cinema em movimento</title>
+  <link rel="preconnect" href="https://image.tmdb.org">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span>CINEMA</span><strong>MAGAZINE</strong></a>
+    <button class="menu-button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav>
+      <a href="#em-cartaz">Em cartaz</a><a href="#streaming">Streaming</a><a href="#series">Séries</a>
+      <a href="#trailers">Trailers</a><a href="#noticias">Notícias</a>
+    </nav>
+    <button class="search-button" aria-label="Pesquisar">⌕</button>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-busy="true">
+      <div class="hero-backdrop"></div>
+      <div class="hero-copy"><span class="kicker">CARREGANDO DESTAQUES</span><h1>O cinema está prestes a começar.</h1><p>Filmes, séries e streaming em um só lugar.</p></div>
+    </section>
+
+    <section class="quick-strip">
+      <strong>AGORA</strong><div id="trending-strip"><span>Atualizando os assuntos do momento…</span></div>
+    </section>
+
+    <section class="content-section" id="em-cartaz">
+      <div class="section-title"><div><span>NA TELA GRANDE</span><h2>Em cartaz</h2></div><a href="#em-cartaz">Ver todos →</a></div>
+      <div class="poster-row skeleton-row" id="now-playing"></div>
+    </section>
+
+    <aside class="ad-slot"><span>PUBLICIDADE</span><div>SUPER BANNER · 970 × 150</div></aside>
+
+    <section class="content-section electric" id="streaming">
+      <div class="section-title"><div><span>PARA VER HOJE</span><h2>No streaming</h2></div><a href="#streaming">Explorar →</a></div>
+      <div class="poster-row skeleton-row" id="streaming-list"></div>
+    </section>
+
+    <section class="split-section" id="trailers">
+      <div>
+        <div class="section-title"><div><span>DÊ O PLAY</span><h2>Trailers</h2></div></div>
+        <div class="trailer-feature" id="trailer-feature"><div class="play">▶</div><span>Carregando trailer em destaque</span></div>
+      </div>
+      <aside class="ranking"><span>NOTA DA GALERA</span><h2>Mais bem avaliados</h2><ol id="top-rated"></ol></aside>
+    </section>
+
+    <section class="content-section" id="series">
+      <div class="section-title"><div><span>MARATONA</span><h2>Séries em alta</h2></div></div>
+      <div class="poster-row skeleton-row" id="series-list"></div>
+    </section>
+
+    <section class="editorial-section" id="noticias">
+      <div class="section-title"><div><span>CINEMA POR DENTRO</span><h2>Notícias e listas</h2></div></div>
+      <div class="news-grid" id="editorial-news"><div class="empty-card">As matérias publicadas pelo Content Hub aparecerão aqui.</div></div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="index.html"><span>CINEMA</span><strong>MAGAZINE</strong></a>
+    <p>Seu radar de filmes, séries e streaming.</p>
+    <small>Dados de catálogo fornecidos por TMDB. Disponibilidade de streaming por JustWatch.</small>
+  </footer>
+</body>
+</html>
